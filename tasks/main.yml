@@ -4,4 +4,4 @@
     name: "{{ cask_name }}"
     state: "{{ cask_state }}"
   environment:
-    HOMEBREW_CASK_OPTS: "{{ HOMEBREW_CASK_OPTS }}"
+    HOMEBREW_CASK_OPTS: "{{ cask_opts }}"
