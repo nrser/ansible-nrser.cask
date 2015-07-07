@@ -1,0 +1,7 @@
+---
+- name: ensure brew cask {{ cask_name }} is {{ cask_state | default('installed') }}
+  homebrew_cask:
+    name: "{{ cask_name }}"
+    state: "{{ cask_state }}"
+  environment:
+    HOMEBREW_CASK_OPTS: "{{ HOMEBREW_CASK_OPTS }}"
